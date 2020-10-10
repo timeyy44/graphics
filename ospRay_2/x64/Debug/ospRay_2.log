@@ -1,0 +1,3 @@
+﻿  main.cpp
+C:\Users\WIN10\source\repos\ospRay_2\ospRay_2\tools.h(26,15): warning C4244: “参数”: 从“time_t”转换到“unsigned int”，可能丢失数据
+  ospRay_2.vcxproj -> C:\Users\WIN10\source\repos\ospRay_2\x64\Debug\ospRay_2.exe
