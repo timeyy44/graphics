@@ -29,7 +29,7 @@ struct ATOM {
     int serial;
     string name;
     string dis;
-    int fzbs;
+    string fzbs;
     string altLos;
     string res;
     string chainID;
@@ -90,10 +90,11 @@ bool phraseA(ifstream& file, vector<vector<ATOM>*> *atomss) {
         atom.serial = stoi(p.substr(6, 5));
         atom.name = p.substr(12, 2);
         atom.dis = p.substr(14, 1);
-        if (p.substr(15, 1) == " ")
+        /*if (p.substr(15, 1) == " ")
             atom.fzbs = -1;
         else
-            atom.fzbs = stoi(p.substr(15, 1));
+            atom.fzbs = stoi(p.substr(15, 1));*/
+        atom.fzbs = p.substr(15, 1);
         atom.altLos = p.substr(16, 1);
         atom.res = p.substr(17, 3);
         atom.chainID = p.substr(21, 1);
